@@ -1,13 +1,14 @@
 module.exports = {
   parser: "@typescript-eslint/parser",
   extends: [
-    "airbnb",
+    // "airbnb",
     "plugin:prettier/recommended",
     "prettier/@typescript-eslint",
     "plugin:@typescript-eslint/recommended",
     "plugin:import/typescript",
     "plugin:security/recommended",
     "plugin:testcafe/recommended",
+    "eslint:recommended",
   ],
   parserOptions: {
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
