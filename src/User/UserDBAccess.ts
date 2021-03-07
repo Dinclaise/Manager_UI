@@ -3,7 +3,7 @@ import * as Nedb from "nedb";
 import { SessionToken } from "../Server/Model";
 import { User } from "../Shared/Model";
 
-export class UserDBAccess {
+export class UsersDBAccess {
   private nedb: Nedb;
 
   constructor() {

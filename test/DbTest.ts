@@ -1,9 +1,9 @@
 import { UserCredentialsDBAccess } from "../src/Authorization/UseCredentialsDBAccess";
-import { UserDBAccess } from "../src/User/UserDBAccess";
+import { UsersDBAccess } from "../src/User/UserDBAccess";
 
 class DbTest {
   public dbAccess: UserCredentialsDBAccess = new UserCredentialsDBAccess();
-  public userDBAccess: UserDBAccess = new UserDBAccess();
+  public userDBAccess: UsersDBAccess = new UsersDBAccess();
 }
 
 // new DbTest().dbAccess.putUserCredential({
