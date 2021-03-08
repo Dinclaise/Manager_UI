@@ -20,6 +20,7 @@ module.exports = {
   rules: {
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "no-undef": 0,
-    "comma-dangle": "never",
+    "comma-dangle": 0,
+    "@typescript-eslint/no-explicit-any": "off",
   },
 };
