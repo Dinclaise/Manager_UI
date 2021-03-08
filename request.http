@@ -7,5 +7,5 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:8080/users?id2=asd1221
+GET http://localhost:8080/users?id=asd1221
 Authorization: asap12
