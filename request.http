@@ -8,12 +8,12 @@ Content-Type: application/json
 
 ###
 GET http://localhost:8080/users?id=asd1221
-Authorization: 4bbui7u1ejx 
+Authorization: 6zjqxw5s6j4 
 //token
 
 ###
 PUT http://localhost:8080/users
-Authorization: 1uh9ersyodmi 
+Authorization: 6zjqxw5s6j4 
 Content-Type: application/json
 
 {
