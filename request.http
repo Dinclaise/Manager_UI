@@ -12,6 +12,11 @@ Authorization: 6zjqxw5s6j4
 //token
 
 ###
+GET http://localhost:8080/users?name=Tommy
+Authorization: bffpz5eleou 
+//token
+
+###
 PUT http://localhost:8080/users
 Authorization: 6zjqxw5s6j4 
 Content-Type: application/json
