@@ -1,6 +1,4 @@
-import { rejects } from "assert";
 import * as Nedb from "nedb";
-import { SessionToken } from "../Server/Model";
 import { User } from "../Shared/Model";
 
 export class UsersDBAccess {
@@ -12,6 +10,9 @@ export class UsersDBAccess {
   }
 
   public async putUser(user: User): Promise<void> {
+    if (!user.id) {
+      user.id = this.generateUserId();
+    }
     return new Promise((resolve, reject) => {
       this.nedb.insert(user, (err: Error | null) => {
         if (err) {
@@ -37,5 +38,9 @@ export class UsersDBAccess {
         }
       });
     });
+  }
+
+  private generateUserId() {
+    return Math.random().toString(16).slice(2);
   }
 }

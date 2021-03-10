@@ -8,4 +8,17 @@ Content-Type: application/json
 
 ###
 GET http://localhost:8080/users?id=asd1221
-Authorization: asap12
+Authorization: 4bbui7u1ejx 
+//token
+
+###
+PUT http://localhost:8080/users
+Authorization: 1uh9ersyodmi 
+Content-Type: application/json
+
+{
+  "age": 33,
+  "email": "test@test.com",
+  "name": "barosanu",
+  "workingPosition": 3
+}

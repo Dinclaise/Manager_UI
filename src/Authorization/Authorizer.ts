@@ -38,19 +38,19 @@ export class Authorizer implements TokenGenerator, TokenValidator {
   public async validateToken(tokenId: string): Promise<TokenRights> {
     const token = await this.sessionTokenDBAccess.getToken(tokenId);
 
-    if (!token || token.valid) {
+    if (!token || !token.valid) {
       return {
-        accessRight: [],
+        accessRights: [],
         state: TokenState.INVALID,
       };
     } else if (token.expirationTime < new Date()) {
       return {
-        accessRight: [],
+        accessRights: [],
         state: TokenState.EXPIRED,
       };
     } else {
       return {
-        accessRight: token.accessRights,
+        accessRights: token.accessRights,
         state: TokenState.VALID,
       };
     }
