@@ -24,7 +24,7 @@ export enum TokenState {
 }
 
 export interface TokenRights {
-  accessRight: AccessRight[];
+  accessRights: AccessRight[];
   state: TokenState;
 }
 
