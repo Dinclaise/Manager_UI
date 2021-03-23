@@ -1,5 +1,5 @@
 {
-  "name": "manager_ui",
+  "name": "manager_server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dinclaise/Manager_UI.git"
+    "url": "git+https://github.com/Dinclaise/Manager_Server.git"
   },
   "author": "Anton Anokhin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dinclaise/Manager_UI/issues"
+    "url": "https://github.com/Dinclaise/Manager_Server/issues"
   },
-  "homepage": "https://github.com/Dinclaise/Manager_UI#readme",
+  "homepage": "https://github.com/Dinclaise/Manager_Server#readme",
   "devDependencies": {
     "@types/nedb": "^1.8.11",
     "@types/node": "^14.14.31",
