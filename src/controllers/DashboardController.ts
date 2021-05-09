@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
+/* eslint-disable no-case-declarations */
 import { AccessRight, SessionToken } from "../models/AuthenticationModels";
 import { User } from "../models/DataModels";
 import { DataService } from "../services/DataService";
